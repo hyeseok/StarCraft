@@ -1,0 +1,15 @@
+﻿1. 함수의 중복 코드
+Marine_UseSteamPack()
+Firebat_UseSteamPack()
+
+2. 데이터 타입(마린, 파이어뱃)과 연산이 연결되어 있지 않음
+Marine_UseSteamPack(m1, 2);
+m1.UseSteamPack(2);
+Heal(m1, 30);
+m1.Heal(30);
+
+3. 마린과 파이어뱃 중복 코드
+
+4. 마린과 파이어뱃을 추상화 할 수 없음
+
+5. 캡슐화 불가(은닉 불가)
