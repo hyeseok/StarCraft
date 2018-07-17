@@ -5,9 +5,13 @@ using System.Text;
 
 namespace StarCraft
 {
-    class Marine
+    class Marine : Unit
     {
-        public int HP = 50;
-        public int speed = 1;
+        // 공격을 당할때 (Firebat)
+        
+        public override void GetDamaged(int enemyAttack)
+        {
+            HP -= (enemyAttack * 2);
+        }
     }
 }

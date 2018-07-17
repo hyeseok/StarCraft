@@ -5,9 +5,12 @@ using System.Text;
 
 namespace StarCraft
 {
-    class Firebat
+    class Firebat : Unit
     {
-        public int HP = 60;
-        public int speed = 1;
+        // 공격을 당할때 (Firebat)
+        public override void GetDamaged(int enemyAttack)
+        {
+            HP -= (enemyAttack * 3);
+        }
     }
 }
