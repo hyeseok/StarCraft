@@ -41,10 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Firebat.cs" />
+    <Compile Include="Ghost.cs" />
     <Compile Include="Marine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unit.cs" />
+    <Compile Include="Zealot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="구조적 코드의 문제점.txt" />

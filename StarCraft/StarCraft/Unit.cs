@@ -29,7 +29,10 @@ namespace StarCraft
 
         //================================
         //가상 메서드
-        public abstract void GetDamaged(int enemyAttack);
+        public virtual void GetDamaged(int enemyAttack)
+        {
+            HP -= (enemyAttack * 1);
+        }
 
         // 스팀팩 사용할 때(use Firebat) 
         public int UseSteamPack(int count)

@@ -8,7 +8,6 @@ namespace StarCraft
     class Marine : Unit
     {
         // 공격을 당할때 (Firebat)
-        
         public override void GetDamaged(int enemyAttack)
         {
             HP -= (enemyAttack * 2);
